@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top - 50)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 54
+    offset: 300
   });
 
   /* ################################# NEED TO CHECK THIS AGAIN #################################    
@@ -49,5 +49,13 @@
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
+
+    $("#no_name").click(function(){ 
+        console.log(">>> Click button <<<")
+        $.alert({
+            title: 'Alert!',
+            content: 'Source currently not available',
+        });
+    })
 
 })(jQuery); // End of use strict

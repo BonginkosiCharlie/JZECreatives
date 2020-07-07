@@ -23,6 +23,9 @@
     <!-- Custom styles for this template -->
     <!-- <link href="css/jzecreatives.min.css" rel="stylesheet"> -->
     <link href="css/jzecreatives.css" rel="stylesheet">
+    
+      <!-- Jquery confirm css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
   </head>
 
@@ -31,7 +34,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">JZE Creatives</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="display: block">
+            <img src="img/logos/jze.jpg" alt="Avatar" class="img-fluid"><span>Jze Creatives</span>
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -60,12 +65,10 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in"><span class="head-first">We are</span> <span class="head-second">JZE Creatives</span></div>
-          <div class="intro-heading"></div>
         </div>
-        <a class="ct-btn-scroll js-scroll-trigger" href="#about">
-            <img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png">
-        <!-- <span>&#8595;</span> -->
-        </a>
+            <div id="arrow-down" class="demo js-scroll-trigge">
+                <a href="#about"><span></span></a>
+            </div>
       </div>
     </header>
       
@@ -81,17 +84,19 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 serviceInner">
                 <div class="image-container image-left" style="background-image: url('img/pexels-photo-796602.jpg')"></div>
-                <!-- <img src="img/about/dulau.jpg" alt="Rounded Image" class="img-rounded img-responsive"> -->
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 serviceInner">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. 
+                    In today's digital business world, you need a partner who can help you take advantage of marketing opportunities across a variety of platforms and channels in real-time.
                 </p>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                    JZE Creatives, an emerging Digital Marketing Agency based in South Africa, combines progressive, data-driven thinking with in-depth knowledge garnered from our many years' experience within the digital marketing space.
                 </p>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.                                  
+                    Which translates to outstanding, meaningful and measurable results for our clients. As a full-service Digital Marketing hub, we boast an extensive list of clients from all sectors locally.
+                </p>
+                <p>
+                    In this fast-paced, ever-changing  environment, we pride ourselves on being unapologetically client-centric to ensure we consistently deliver unmatched service, design, and best-practice innovations that place you at the forefront of your industry.Our energetic team of leading professionals are passionate about what they do - from social media content development to world-class web design.            
                 </p>
             </div>
         </div>
@@ -112,29 +117,28 @@
                 <div class="row text-center adjust">
                     <div class="col-md-6 col-sm-12 serviceInner">
                     <h6 class="service-heading">Integrated Marketing</h6>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <button class="btn-primary"><a href="#">Learn More</a></button>
+                    <p class="text-muted">We provide top consulting services since 2015. Experience the highest level of business assistance.</p>
+                    <button class="btn-primary"><a href="#" id="no_name">Learn More</a></button>
                     </div>
                     <div class="col-md-6 col-sm-12 serviceInner">
                     <h6 class="service-heading">Design & Development</h6>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <button class="btn-primary"><a href="#">Learn More</a></button>
+                    <p class="text-muted">We provide top business strategist services since 2015, that will set your business in the right direction and position</p>
+                    <button class="btn-primary"><a href="#" id="no_name">Learn More</a></button>
                     </div>
                     <div class="col-md-6 col-sm-12 serviceInner">
                     <h6 class="service-heading">Digital Strategy</h6>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <button class="btn-primary"><a href="#">Learn More</a></button>
+                    <p class="text-muted">Our experts know how to solve your company's issues, be it onsite or offsite. We empower and encourage business to use the nexus between corporate and digital strategies.</p>
+                    <button class="btn-primary"><a href="#" id="no_name">Learn More</a></button>
                     </div>
                     <div class="col-md-6 col-sm-12 serviceInner">
                     <h6 class="service-heading">Hosting & Maintenance</h6>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <button class="btn-primary"><a href="#">Learn More</a></button>
+                    <p class="text-muted">We aim to provide the fastest and most reliable hosting solutions. We also head and shoulders with most solution providers.</p>
+                    <button class="btn-primary"><a href="#" id="no_name">Learn More</a></button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="image-container image-right" style="background-image: url('img/pexels-photo-62689b&w-.jpg')"></div>
-                <!-- <img src="img/about/dulau.jpg" alt="Rounded Image" class="img-rounded img-responsive img-dog"> -->
             </div>
         </div>
       </div>
@@ -142,7 +146,7 @@
 
     <!-- Team -->
     <section class="bg-light" id="team">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
             <hr/>
           <div class="col-lg-3">
@@ -151,100 +155,124 @@
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <p class="large text-muted">Our team consists of experienced, highly professional individuals who value honesty, integrity and excellence in their work</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-4">
+          <div class="col">
             <div class="team-member">
-              <img class="mx-auto" src="img/team/1.jpg" alt="">
-              <h6>Kay Garland</h6>
-              <p class="text-muted">Lead Designer</p>
+              <img class="mx-auto" src="img/team/Kgomotso Moale426x640.jpg" alt="">
+              <h6>Kgomotso Moale</h6>
+              <p class="text-muted">Graphic Designer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-4">
+          <div class="col">
             <div class="team-member">
-              <img class="mx-auto" src="img/team/2.jpg" alt="">
-              <h6>Larry Parker</h6>
-              <p class="text-muted">Lead Marketer</p>
+              <img class="mx-auto" src="img/team/Bonginkosi Mtshali426x640.jpg" alt="">
+              <h6>Bonginksoi Mtshali</h6>
+              <p class="text-muted">IT Specialist</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-4">
+          <div class="col">
             <div class="team-member">
-              <img class="mx-auto" src="img/team/3.jpg" alt="">
-              <h6>Diana Pertersen</h6>
-              <p class="text-muted">Lead Developer</p>
+              <img class="mx-auto" src="img/team/Sbongile Nxumalo426x640.jpg" alt="">
+              <h6>Sibongile Nxumalo</h6>
+              <p class="text-muted">Business Administrator</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="#" id="no_name">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-4">
+          <div class="col">
             <div class="team-member">
-              <img class="mx-auto" src="img/team/3.jpg" alt="">
-              <h6>Diana Pertersen</h6>
-              <p class="text-muted">Lead Developer</p>
+              <img class="mx-auto" src="img/team/Charles Nxumalo.jfif" alt="">
+              <h6>Charles Nxumalo</h6>
+              <p class="text-muted">Business Development Manager</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://mobile.twitter.com/Jzee07Thabo">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/jzee07thabo">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/thabo-charles-918ab551">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="team-member">
+              <img class="mx-auto" src="img/team/Sechaba Moale426x640.jpg" alt="">
+              <h6>Sechaba Moale</h6>
+              <p class="text-muted">Marketing Consultant</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#" id="no_name">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" id="no_name">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" id="no_name">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -252,16 +280,6 @@
             </div>
           </div>
         </div>
-        <!--  
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="image-container" style="background-image: url('img/about/bg3.jpg')"></div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde</p>
-            </div>
-        </div>
-        -->
       </div>
     </section>
 
@@ -307,7 +325,6 @@
           </div>
           <div id="adjust" class="col-lg-6 col-md-6 col-sm-12">
             <div class="image-container image-right" style="background-image: url('img/pexels-photo-129208.jpg')"></div>
-            <!-- <img src="img/about/dulau.jpg" alt="Rounded Image" class="img-rounded img-responsive img-dog"> -->
           </div>    
         </div>
       </div>
@@ -322,17 +339,17 @@
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/JzeCreatives">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="#" id="no_name">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/jze-creatives-99906b1a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwbZAd9NGSLy2uE%2B99irDyg%3D%3D">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -357,6 +374,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/jzecreatives.js"></script>
+    
+    <!-- Jquery confirm js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>  
 
   </body>
 
